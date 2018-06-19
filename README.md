@@ -29,5 +29,11 @@ Read more about [Step implementations in Java](http://getgauge.io/documentation/
 * You can execute the specification as:
 
 ```
-mvn test
+Things to do before running tests:
+1) Update facebook user details in env/default/facebook.properties and mobile.properties for mobile execution
+2) Place the apk in apps/ folder
+
+You can run the tests using spec files. Right click on spec file and click Run option.
+
+You can run from command prompt as well using mvn gauge:execute -DspecsDir=specs -Dtags="{TagName}"
 ```
